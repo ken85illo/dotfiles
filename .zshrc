@@ -110,3 +110,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
+alias clear='printf "\033[2J\033[3J\033[1;1H"'
