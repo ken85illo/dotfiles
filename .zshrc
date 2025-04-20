@@ -109,4 +109,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
+alias lazydf='lazygit --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
 
