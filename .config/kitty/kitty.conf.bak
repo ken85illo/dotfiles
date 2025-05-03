@@ -2660,9 +2660,3 @@ map shift+cmd+minus       change_font_size all -1.0
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Adwaita darker
-include current-theme.conf
-# END_KITTY_THEME
