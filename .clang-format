@@ -136,7 +136,7 @@ AlwaysBreakBeforeMultilineStrings: false
 
 # AlwaysBreakTemplateDeclarations (bool)
 # If true, always break after the template<...> of a template declaration.
-AlwaysBreakTemplateDeclarations: false
+AlwaysBreakTemplateDeclarations: true
 
 # BinPackArguments (bool)
 # If false, a function call’s arguments will either be all on the same line or will have one line each.
@@ -211,7 +211,7 @@ CommentPragmas: ''
 
 # ConstructorInitializerAllOnOneLineOrOnePerLine (bool)
 # If the constructor initializers don’t fit on a line, put each initializer on its own line.
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
 
 # ConstructorInitializerIndentWidth (unsigned)
 # The number of characters to use for indentation of constructor initializer lists.
