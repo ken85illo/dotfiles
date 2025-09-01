@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo pacman -Syu
+yay -Sua
+flatpak update
