@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dotfiles='git --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
 alias lazydf='lazygit --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
+alias gvim="nvim --listen /tmp/godot.pipe"
 
 export VCPKG_ROOT=$HOME/vcpkg/
 export PATH=$PATH:$VCPKG_ROOT:$HOME/.scripts
