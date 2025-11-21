@@ -26,6 +26,7 @@
     ],
     "battery": {
         "format": "{icon}  {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
         "format-icons": [
             "",
             "",
@@ -117,7 +118,8 @@
         "scroll-step": 1,
         "ignored-sinks": [
             "Easy Effects Sink"
-        ]
+        ],
+        "on-click": "pavucontrol"
     },
     "hyprland/workspaces": {
         "format": "{icon}",

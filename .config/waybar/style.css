@@ -12,15 +12,16 @@ window#waybar {
 #workspaces button {
     padding: 1px 5px;
     border-radius: 10px;
+    color: #cdd6f5;
     font-weight: 700;
 }
 
 #workspaces button.active {
     transition: all 250ms ease-in-out;
     min-width: 50px;
-    color: #3a3264;
     background-color: #c3b6f3;
     border: 2px solid white;
+    color: #3a3264;
     font-weight: 900;
 }
 
@@ -45,6 +46,13 @@ window#waybar {
     background-color: #1e1e2e;
     border-radius: 10px;
     border: 2px solid #585b70;
+}
+
+#window,
+#idle_inhibitor,
+#clock,
+#power-profiles-daemon {
+    color: #cdd6f5;
 }
 
 #clock {
