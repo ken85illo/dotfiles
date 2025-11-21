@@ -1,4 +1,9 @@
 # Dotfiles
+My arch linux dotfiles with hyprland, waybar, wofi, etc
+
+<img width="1920" height="1080" alt="2025-11-21-201823_hyprshot" src="https://github.com/user-attachments/assets/f9560d32-0b6d-4b96-ab74-7c95886fc37a" />
+
+<img width="1920" height="1080" alt="2025-11-21-201958_hyprshot" src="https://github.com/user-attachments/assets/422ab160-444d-4799-83f2-cb531ddf1830" />
 
 Instructions for the dotfiles repository at <https://github.com/makeyourownmaker/dotfiles>.
 
