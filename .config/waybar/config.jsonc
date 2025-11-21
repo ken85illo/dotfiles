@@ -54,7 +54,7 @@
             }
         },
         "actions": {
-            "on-click-right": "mode",
+            "on-click": "mode",
             "on-scroll-up": "tz_up",
             "on-scroll-down": "tz_down",
             "on-scroll-up": "shift_up",
