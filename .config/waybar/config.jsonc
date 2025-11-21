@@ -1,128 +1,151 @@
 {
-	/*------------------------------------------------------------
-	    regression: wildcard includes are broken after v0.14.0
-	      - https://github.com/Alexays/Waybar/issues/4354
-	      - https://github.com/sejjy/mechabar/issues/31
-	------------------------------------------------------------*/
-	/*
-	"include": [
-		"~/.config/waybar/modules/*.jsonc",
-		"~/.config/waybar/modules/custom/*.jsonc",
-		"~/.config/waybar/modules/hyprland/*.jsonc"
-
-		// modules that are not included by default:
-		// "~/.config/waybar/modules/extras/*.jsonc"
-	],
-	*/
-
-	"include": [
-		// modules-left
-		"~/.config/waybar/modules/custom/user.jsonc",
-		"~/.config/waybar/modules/hyprland/workspaces.jsonc",
-		"~/.config/waybar/modules/hyprland/window.jsonc",
-
-		// modules-center
-		"~/.config/waybar/modules/hyprland/windowcount.jsonc",
-		"~/.config/waybar/modules/temperature.jsonc",
-		"~/.config/waybar/modules/memory.jsonc",
-		"~/.config/waybar/modules/cpu.jsonc",
-		"~/.config/waybar/modules/custom/distro.jsonc",
-		"~/.config/waybar/modules/idle_inhibitor.jsonc",
-		"~/.config/waybar/modules/clock.jsonc",
-		"~/.config/waybar/modules/network.jsonc",
-		"~/.config/waybar/modules/bluetooth.jsonc",
-		"~/.config/waybar/modules/custom/system_update.jsonc",
-
-		// modules-right
-		"~/.config/waybar/modules/mpris.jsonc",
-		"~/.config/waybar/modules/pulseaudio.jsonc",
-		"~/.config/waybar/modules/backlight.jsonc",
-		"~/.config/waybar/modules/battery.jsonc",
-		"~/.config/waybar/modules/custom/power_menu.jsonc",
-
-		"~/.config/waybar/modules/custom/dividers.jsonc"
-
-		// modules that are not included by default:
-		// "~/.config/waybar/modules/extras/taskbar.jsonc",
-		// "~/.config/waybar/modules/extras/tray.jsonc",
-		// "~/.config/waybar/modules/extras/wireplumber.jsonc"
-	],
-
-	/*------------
-	    layout
-	------------*/
-
-	"modules-left": [
-		"group/user",
-		"custom/left_div#1",
-		"hyprland/workspaces",
-		"custom/right_div#1",
-		"hyprland/window"
-	],
-	"modules-center": [
-		"hyprland/windowcount",
-		"custom/left_div#2",
-		"temperature",
-		"custom/left_div#3",
-		"memory",
-		"custom/left_div#4",
-		"cpu",
-		"custom/left_inv#1",
-		"custom/left_div#5",
-		"custom/distro",
-		"custom/right_div#2",
-		"custom/right_inv#1",
-		"idle_inhibitor",
-		"clock#time",
-		"custom/right_div#3",
-		"clock#date",
-		"custom/right_div#4",
-		"network",
-		"bluetooth",
-		"custom/system_update",
-		"custom/right_div#5"
-	],
-	"modules-right": [
-		"mpris",
-		"custom/left_div#6",
-		"group/pulseaudio",
-		"custom/left_div#7",
-		"backlight",
-		"custom/left_div#8",
-		"battery",
-		"custom/left_inv#2",
-		"custom/power_menu"
-	],
-
-	/*-------------
-	    options
-	-------------*/
-
-	// "expand-center":
-	// "expand-left":
-	// "expand-right":
-	"layer": "top",
-	// "output":
-	// "position":
-	"height": 0,
-	"width": 0,
-	"margin": 0,
-	// "margin-top":
-	// "margin-left":
-	// "margin-bottom":
-	// "margin-right":
-	// "no-center":
-	"spacing": 0,
-	// "name":
-	"mode": "dock",
-	// "start_hidden":
-	// "modifier-reset":
-	// "exclusive":
-	// "fixed-center":
-	// "passthrough":
-	// "ipc":
-	// "id":
-	"reload_style_on_change": true
-	// "on-sigusr1":
-	// "on-sigusr2":
+    "layer": "top",
+    "margin-top": 10,
+    "margin-left": 20,
+    "margin-right": 20,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/archicon",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "cpu",
+        "temperature",
+        "memory",
+        "backlight",
+        "network",
+        "bluetooth",
+        "pulseaudio",
+        "battery"
+    ],
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%a %D %r}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#f5e0dc'><b>{}</b></span>",
+                "days": "<span color='#eba0ac'><b>{}</b></span>",
+                "weeks": "<span color='#94e2d5'><b>W{}</b></span>",
+                "weekdays": "<span color='#f9e2af'><b>{}</b></span>",
+                "today": "<span color='#fab387'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}  {percent}%",
+        "format-icons": [
+            "󱩎",
+            "󱩏",
+            "󱩑",
+            "󱩔",
+            "󱩖"
+        ]
+    },
+    "network": {
+        "interface": "wlp45s0",
+        "format": "󰖩 {signalStrength}%",
+        "format-disabled": "󰖪 {signalStrength}%", //An empty format will hide the module.
+        "format-disconnected": "󱚼 {signalStrength}%", //An empty format will hide the module.
+        "format-wifi": "󰖩  {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) 󰖩",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "nmcli radio wifi on; kitty wifitui",
+        "on-click-right": "nmcli radio wifi off"
+    },
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": " {num_connections}",
+        "format-disabled": "󰂲 {num_connections}", // an empty format will hide the module
+        "format-connected": "󰂰 {num_connections}",
+        "tooltip-format": "Bluetooth Enabled (Not Connected)",
+        "tooltip-format-disabled": "Bluetooth Disabled",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "rfkill unblock bluetooth; kitty bluetui",
+        "on-click-right": "rfkill block bluetooth"
+    },
+    "pulseaudio": {
+        "format": "{icon}   {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "scroll-step": 1,
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 5, // 5 workspaces by default on every monitor
+            "HDMI-A-1": 3 // but only three on HDMI-A-1
+        }
+    },
+    "hyprland/window": {
+        "format": "{title}",
+        "separate-outputs": true
+    },
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+        "max-length": 10
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "critical-threshold": 80,
+        "format-critical": " {temperatureC}°C",
+        "format": " {temperatureC}°C"
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "custom/archicon": {
+        "format": "",
+        "tooltip": false
+    }
 }

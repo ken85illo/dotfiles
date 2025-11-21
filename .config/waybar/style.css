@@ -1,12 +1,97 @@
-/* ignore GTK theme */
 * {
-	all: initial;
+    font-family: 'Ubuntu Nerd Font';
+    font-size: 14px;
+    font-weight: 700;
 }
 
-@import "theme.css";
-@import "styles/fonts.css";
-@import "styles/global.css";
-@import "styles/modules-center.css";
-@import "styles/modules-left.css";
-@import "styles/modules-right.css";
-@import "styles/states.css";
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button {
+    padding: 1px 5px;
+    border-radius: 10px;
+}
+
+#workspaces button.active {
+    transition: all 250ms ease-in-out;
+    min-width: 50px;
+    color: #3a3264;
+    background-color: #c3b6f3;
+}
+
+#custom-archicon,
+#workspaces,
+#window,
+#cpu,
+#temperature,
+#memory,
+#backlight,
+#network,
+#bluetooth,
+#pulseaudio,
+#battery,
+#clock {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    border: 2px solid #585b70;
+}
+
+#clock {
+    padding: 0px 20px;
+}
+
+.modules-right * {
+    color: #3a3264;
+}
+
+#battery {
+    background-color: #a6e3a1;
+}
+
+#pulseaudio {
+    background-color: #eba0ac;
+}
+
+#bluetooth {
+    background-color: #f9e2af;
+}
+
+#network {
+    background-color: #94e2d5;
+}
+
+#backlight {
+    background-color: #89b4fa;
+}
+
+#memory {
+    background-color: #b4befe;
+}
+
+#temperature {
+    background-color: #f2cdcd;
+}
+
+#cpu {
+    background-color: #fab387;
+}
+
+#custom-archicon {
+    color: #3a3264;
+    background-color: #c3b6f3;
+}
+
+tooltip {
+    background: #1e1e2e;
+    border: 2px solid #585b70;
+}
+
+tooltip label {
+    color: white;
+}
