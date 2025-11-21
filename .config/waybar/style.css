@@ -38,7 +38,8 @@ window#waybar {
 #battery,
 #clock,
 #idle_inhibitor,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#mpris {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 3px;
@@ -51,7 +52,8 @@ window#waybar {
 #window,
 #idle_inhibitor,
 #clock,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#mpris {
     color: #cdd6f5;
 }
 

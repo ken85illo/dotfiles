@@ -1,20 +1,21 @@
 {
     "layer": "top",
     "margin-top": 10,
-    "margin-left": 20,
-    "margin-right": 20,
+    "margin-left": 10,
+    "margin-right": 10,
     "reload_style_on_change": true,
     "modules-left": [
         "custom/archicon",
         "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
+        "mpris"
     ],
     "modules-center": [
-        "power-profiles-daemon",
         "clock",
-        "idle_inhibitor"
     ],
     "modules-right": [
+        "power-profiles-daemon",
+        "idle_inhibitor",
         "cpu",
         "temperature",
         "memory",
@@ -129,7 +130,7 @@
         }
     },
     "hyprland/window": {
-        "format": "{title}",
+        "format": "{class}",
         "separate-outputs": true
     },
     "cpu": {
@@ -168,6 +169,17 @@
             "performance": "",
             "balanced": "",
             "power-saver": ""
+        }
+    },
+    "mpris": {
+        "format": "{player_icon}  {title}",
+        "format-paused": "{status_icon}  {title}",
+        "player-icons": {
+            "default": "▶",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "⏸"
         }
     }
 }
