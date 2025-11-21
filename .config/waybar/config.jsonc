@@ -10,7 +10,9 @@
         "hyprland/window"
     ],
     "modules-center": [
-        "clock"
+        "power-profiles-daemon",
+        "clock",
+        "idle_inhibitor"
     ],
     "modules-right": [
         "cpu",
@@ -147,5 +149,23 @@
     "custom/archicon": {
         "format": "",
         "tooltip": false
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
     }
 }

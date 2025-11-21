@@ -12,6 +12,7 @@ window#waybar {
 #workspaces button {
     padding: 1px 5px;
     border-radius: 10px;
+    font-weight: 700;
 }
 
 #workspaces button.active {
@@ -19,6 +20,8 @@ window#waybar {
     min-width: 50px;
     color: #3a3264;
     background-color: #c3b6f3;
+    border: 2px solid white;
+    font-weight: 900;
 }
 
 #custom-archicon,
@@ -32,7 +35,9 @@ window#waybar {
 #bluetooth,
 #pulseaudio,
 #battery,
-#clock {
+#clock,
+#idle_inhibitor,
+#power-profiles-daemon {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 3px;
