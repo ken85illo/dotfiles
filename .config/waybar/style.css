@@ -42,8 +42,8 @@ window#waybar {
 #mpris {
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
     background-color: #1e1e2e;
     border-radius: 10px;
     border: 2px solid #585b70;
@@ -55,10 +55,6 @@ window#waybar {
 #power-profiles-daemon,
 #mpris {
     color: #cdd6f5;
-}
-
-#clock {
-    padding: 0px 20px;
 }
 
 .modules-right * {

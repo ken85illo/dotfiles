@@ -6,12 +6,12 @@
     "reload_style_on_change": true,
     "modules-left": [
         "custom/archicon",
-        "hyprland/workspaces",
+        "clock",
         "hyprland/window",
         "mpris"
     ],
     "modules-center": [
-        "clock",
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "power-profiles-daemon",
