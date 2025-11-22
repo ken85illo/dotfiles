@@ -1,8 +1,7 @@
 allow_images=true
 allow_markup=true
-matching=fuzzy
 gtk_dark=true
 line_wrap=word
-image_size=64
+image_size=48
 insensitive=true
 width=600
