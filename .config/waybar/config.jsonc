@@ -7,7 +7,8 @@
     "modules-left": [
         "custom/archicon",
         "clock",
-        "hyprland/window"
+        "hyprland/window",
+        "mpris"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -132,6 +133,7 @@
     },
     "hyprland/window": {
         "format": "{class}",
+        "tooltip-format": "{title}",
         "separate-outputs": true
     },
     "cpu": {
@@ -173,8 +175,9 @@
         }
     },
     "mpris": {
-        "format": "{player_icon}  {title}",
-        "format-paused": "{status_icon}  {title}",
+        "format": "{player_icon}  {length}",
+        "format-paused": "{status_icon}  {length}",
+        "tooltip-format": "{dynamic}",
         "player-icons": {
             "default": "▶",
             "mpv": "🎵"
