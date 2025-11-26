@@ -29,9 +29,7 @@
     margin-right: 10px;
 }
 
-#selected {
-    color: #3a3264;
-    background-color: #b4befe;
+#entry:selected {
     border-radius: 10px;
 }
 

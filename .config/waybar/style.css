@@ -11,7 +11,7 @@ window#waybar {
 
 #workspaces button {
     padding: 1px 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #cdd6f5;
     font-weight: 700;
 }
@@ -39,13 +39,14 @@ window#waybar {
 #clock,
 #idle_inhibitor,
 #power-profiles-daemon,
-#mpris {
+#mpris,
+#tray {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 2px;
     margin-right: 2px;
     background-color: #1e1e2e;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px solid #585b70;
 }
 
