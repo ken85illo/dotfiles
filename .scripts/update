@@ -2,4 +2,3 @@
 
 sudo pacman -Syu
 yay -Sua
-flatpak update

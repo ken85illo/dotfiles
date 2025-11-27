@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 alias dotfiles='git --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
 alias lazydf='lazygit --git-dir=/home/kennethpabillo/.dotfiles --work-tree=/home/kennethpabillo'
 alias gvim="nvim --listen /tmp/godot.pipe"
-alias fastfetch="fastfetch --config ascii-art.jsonc"
+alias fastfetch="fastfetch --config arch"
 alias isis="wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Labcenter\ Electronics/Proteus\ 7\ Professional/BIN/ISIS.EXE"
 
 export VCPKG_ROOT=$HOME/vcpkg/
