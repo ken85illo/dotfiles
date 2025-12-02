@@ -7,9 +7,9 @@
     "modules-left": [
         "custom/archicon",
         "clock",
+        "tray",
         "hyprland/window",
-        "mpris",
-        "tray"
+        "mpris"
     ],
     "modules-center": [
         "hyprland/workspaces"
@@ -28,7 +28,7 @@
     ],
     "battery": {
         "format": "{icon}  {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
+        "format-charging": "󱐋 {capacity}%",
         "format-icons": [
             "",
             "",
@@ -176,8 +176,8 @@
         }
     },
     "mpris": {
-        "format": "{player_icon}  {length}",
-        "format-paused": "{status_icon}  {length}",
+        "format": "{player_icon}",
+        "format-paused": "{status_icon}",
         "tooltip-format": "{dynamic}",
         "player-icons": {
             "default": "▶",

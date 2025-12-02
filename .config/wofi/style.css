@@ -10,11 +10,12 @@
 
 #inner-box {
     margin: 20px;
-    border-radius: 20px;
+    margin-top: 5px;
 }
 
 #input {
     border: 2px solid #89b4fa;
+    margin-bottom: 5px;
 }
 
 #text {
@@ -28,7 +29,13 @@
 }
 
 #entry:selected {
+    color: #3a3264;
+    background-color: #b4befe;
     border-radius: 10px;
+}
+
+#text:selected {
+    color: #3a3264;
 }
 
 #entry {
